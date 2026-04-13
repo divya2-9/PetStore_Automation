@@ -1,0 +1,82 @@
+2026-04-13 12:15:47.944 [INFO ] clients.BaseTest - BaseTest initialized. Base URL: https://petstore.swagger.io/v2
+2026-04-13 12:15:47.948 [INFO ] stepDefinitions.PetSteps - Base URL configured: https://petstore.swagger.io/v2
+2026-04-13 12:15:47.962 [INFO ] clients.PetClient - Creating pet name='HighValueBulldog' status='available' category='HighValueBulldog'
+2026-04-13 12:15:51.964 [INFO ] stepDefinitions.PetSteps - Created pet with category: name=HighValueBulldog category=HighValueBulldog status=available
+2026-04-13 12:15:51.968 [INFO ] stepDefinitions.PetSteps - Status code verified: 200
+2026-04-13 12:15:52.916 [INFO ] stepDefinitions.PetSteps - Extracted petId=323099
+2026-04-13 12:15:52.938 [INFO ] clients.PetClient - Updating pet id=323099 to status='sold'
+2026-04-13 12:15:55.082 [INFO ] stepDefinitions.PetSteps - PUT /pet — updated id=323099 to status=sold
+2026-04-13 12:15:55.086 [INFO ] stepDefinitions.PetSteps - Status code verified: 200
+2026-04-13 12:15:55.090 [INFO ] clients.StoreClient - Fetching store inventory
+2026-04-13 12:15:57.232 [INFO ] stepDefinitions.InventorySteps - GET /store/inventory response: {"sold":383,"d":1,"string":10,"Busy":1,"pending":91,"available":478,"Not Available":2,"solsd":1,"bold":1,"availabl":1,"unknown_status":2,"Sold":1,"{{statusP}}":1,"Available":1}
+2026-04-13 12:15:57.236 [INFO ] stepDefinitions.PetSteps - Status code verified: 200
+2026-04-13 12:15:57.238 [INFO ] clients.PetClient - Finding pets with status='sold'
+2026-04-13 12:15:59.746 [INFO ] stepDefinitions.PetSteps - GET /pet/findByStatus?status=sold — count: 383
+2026-04-13 12:15:59.747 [INFO ] stepDefinitions.PetSteps - Status code verified: 200
+2026-04-13 12:15:59.843 [INFO ] stepDefinitions.PetSteps - Verified pet ID=323099 exists in 'sold' list
+2026-04-13 12:15:59.885 [INFO ] stepDefinitions.PetSteps - Base URL configured: https://petstore.swagger.io/v2
+2026-04-13 12:15:59.886 [INFO ] clients.StoreClient - Fetching store inventory
+2026-04-13 12:16:01.653 [INFO ] stepDefinitions.InventorySteps - GET /store/inventory response: {" Not available":1,"sold":402,"sold ":1,"NOT available":1,"string":3,"special-dog":1,"pending":86,"available":462,"avalible":1,"available_smart":1,"PENDING":5,"In Heaven":1,"available, sold":1,"avaliable":1,"Available":1}
+2026-04-13 12:16:01.654 [INFO ] stepDefinitions.PetSteps - Status code verified: 200
+2026-04-13 12:16:01.683 [INFO ] stepDefinitions.InventorySteps - Inventory available count: 462
+2026-04-13 12:16:01.685 [INFO ] clients.PetClient - Finding pets with status='available'
+2026-04-13 12:16:04.502 [INFO ] stepDefinitions.PetSteps - GET /pet/findByStatus?status=available — count: 462
+2026-04-13 12:16:04.521 [INFO ] stepDefinitions.PetSteps - Status code verified: 200
+2026-04-13 12:16:04.562 [INFO ] stepDefinitions.InventorySteps - Inventory available count: 462 | findByStatus count: 462
+2026-04-13 12:16:04.579 [INFO ] stepDefinitions.InventorySteps - TC2 verified: findByStatus count (462) > 0
+2026-04-13 12:16:04.603 [INFO ] stepDefinitions.PetSteps - Base URL configured: https://petstore.swagger.io/v2
+2026-04-13 12:16:04.604 [INFO ] stepDefinitions.PetSteps - Stored pet details: name=BuddyTest status=available
+2026-04-13 12:16:04.605 [INFO ] clients.PetClient - Creating pet with name='BuddyTest' status='available'
+2026-04-13 12:16:06.653 [INFO ] stepDefinitions.PetSteps - POST /pet response: {"id":469249,"name":"BuddyTest","photoUrls":[],"tags":[],"status":"available"}
+2026-04-13 12:16:06.654 [INFO ] stepDefinitions.PetSteps - Status code verified: 200
+2026-04-13 12:16:06.675 [INFO ] stepDefinitions.PetSteps - Extracted petId=469249
+2026-04-13 12:16:06.677 [INFO ] clients.PetClient - Fetching pet with id=469249
+2026-04-13 12:16:08.702 [WARN ] stepDefinitions.PetSteps - GET /pet/469249 returned 404 on attempt 1. Retrying...
+2026-04-13 12:16:10.212 [INFO ] clients.PetClient - Fetching pet with id=469249
+2026-04-13 12:16:12.501 [INFO ] stepDefinitions.PetSteps - GET /pet/469249 succeeded on attempt 2
+2026-04-13 12:16:12.501 [INFO ] stepDefinitions.PetSteps - GET /pet/469249 final response: {"id":469249,"name":"BuddyTest","photoUrls":[],"tags":[],"status":"available"}
+2026-04-13 12:16:12.503 [INFO ] stepDefinitions.PetSteps - Status code verified: 200
+2026-04-13 12:16:12.538 [INFO ] clients.PetClient - Updating pet id=469249 to status='sold'
+2026-04-13 12:16:14.125 [INFO ] stepDefinitions.PetSteps - PUT /pet — updated id=469249 to status=sold
+2026-04-13 12:16:14.127 [INFO ] stepDefinitions.PetSteps - Status code verified: 200
+2026-04-13 12:16:14.128 [INFO ] clients.PetClient - Deleting pet with id=469249
+2026-04-13 12:16:16.176 [INFO ] stepDefinitions.PetSteps - DELETE /pet/469249 — status code: 200
+2026-04-13 12:16:16.177 [INFO ] stepDefinitions.PetSteps - Status code verified: 200
+2026-04-13 12:16:16.178 [INFO ] clients.PetClient - Fetching pet with id=469249
+2026-04-13 12:16:18.120 [WARN ] stepDefinitions.PetSteps - Known Petstore API issue: pet 469249 still returns 200 after delete
+2026-04-13 12:16:18.134 [INFO ] stepDefinitions.PetSteps - Base URL configured: https://petstore.swagger.io/v2
+2026-04-13 12:16:18.135 [INFO ] stepDefinitions.PetSteps - Stored pet details: name=MaxTest status=pending
+2026-04-13 12:16:18.136 [INFO ] clients.PetClient - Creating pet with name='MaxTest' status='pending'
+2026-04-13 12:16:19.963 [INFO ] stepDefinitions.PetSteps - POST /pet response: {"id":451015,"name":"MaxTest","photoUrls":[],"tags":[],"status":"pending"}
+2026-04-13 12:16:19.965 [INFO ] stepDefinitions.PetSteps - Status code verified: 200
+2026-04-13 12:16:19.991 [INFO ] stepDefinitions.PetSteps - Extracted petId=451015
+2026-04-13 12:16:19.992 [INFO ] clients.PetClient - Fetching pet with id=451015
+2026-04-13 12:16:22.332 [WARN ] stepDefinitions.PetSteps - GET /pet/451015 returned 404 on attempt 1. Retrying...
+2026-04-13 12:16:23.847 [INFO ] clients.PetClient - Fetching pet with id=451015
+2026-04-13 12:16:26.209 [INFO ] stepDefinitions.PetSteps - GET /pet/451015 succeeded on attempt 2
+2026-04-13 12:16:26.210 [INFO ] stepDefinitions.PetSteps - GET /pet/451015 final response: {"id":451015,"name":"MaxTest","photoUrls":[],"tags":[],"status":"pending"}
+2026-04-13 12:16:26.211 [INFO ] stepDefinitions.PetSteps - Status code verified: 200
+2026-04-13 12:16:26.241 [INFO ] clients.PetClient - Updating pet id=451015 to status='sold'
+2026-04-13 12:16:27.851 [INFO ] stepDefinitions.PetSteps - PUT /pet — updated id=451015 to status=sold
+2026-04-13 12:16:27.852 [INFO ] stepDefinitions.PetSteps - Status code verified: 200
+2026-04-13 12:16:27.853 [INFO ] clients.PetClient - Deleting pet with id=451015
+2026-04-13 12:16:29.424 [INFO ] stepDefinitions.PetSteps - DELETE /pet/451015 — status code: 200
+2026-04-13 12:16:29.426 [INFO ] stepDefinitions.PetSteps - Status code verified: 200
+2026-04-13 12:16:29.427 [INFO ] clients.PetClient - Fetching pet with id=451015
+2026-04-13 12:16:31.841 [WARN ] stepDefinitions.PetSteps - Known Petstore API issue: pet 451015 still returns 200 after delete
+2026-04-13 12:16:31.859 [INFO ] stepDefinitions.PetSteps - Base URL configured: https://petstore.swagger.io/v2
+2026-04-13 12:16:31.865 [INFO ] clients.UserClient - Creating user username='testUser001' email='invalid_email'
+2026-04-13 12:16:33.889 [INFO ] stepDefinitions.UserSteps - POST /user — username=testUser001 email=invalid_email status=200
+2026-04-13 12:16:33.901 [INFO ] stepDefinitions.PetSteps - Base URL configured: https://petstore.swagger.io/v2
+2026-04-13 12:16:33.901 [INFO ] clients.UserClient - Fetching user with username='nonExistentUser12345'
+2026-04-13 12:16:35.730 [INFO ] stepDefinitions.UserSteps - GET /user/nonExistentUser12345 — status=404
+2026-04-13 12:16:35.731 [INFO ] stepDefinitions.PetSteps - Status code verified: 404
+2026-04-13 12:16:35.735 [INFO ] stepDefinitions.UserSteps - Response message verified: 'User not found'
+2026-04-13 12:16:35.742 [INFO ] stepDefinitions.PetSteps - Base URL configured: https://petstore.swagger.io/v2
+2026-04-13 12:16:35.743 [INFO ] clients.UserClient - Logging in with username='wrongUser'
+2026-04-13 12:16:37.474 [INFO ] stepDefinitions.UserSteps - GET /user/login — username=wrongUser status=200
+2026-04-13 12:16:37.476 [INFO ] stepDefinitions.PetSteps - Status code verified: 200
+2026-04-13 12:16:37.477 [INFO ] stepDefinitions.UserSteps - Login response status: 200
+2026-04-13 12:16:37.477 [INFO ] stepDefinitions.UserSteps - Login response body: {"code":200,"type":"unknown","message":"logged in user session:1776062801033"}
+2026-04-13 12:16:37.479 [WARN ] stepDefinitions.UserSteps - KNOWN API LIMITATION: Petstore /user/login returns a session token even for invalid credentials. In a real system this would return 401 Unauthorized.
+2026-04-13 12:16:37.480 [INFO ] stepDefinitions.UserSteps - TC3 login negative test completed — API limitation documented

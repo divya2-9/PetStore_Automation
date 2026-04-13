@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="51.137" tests="7" skipped="0" failures="0" errors="0">
+<testcase classname="TC4 - Cross-Endpoint Data Consistency" name="Created pet appears in sold list after status update - Example #1.1" time="13.208">
+<system-out><![CDATA[
+Given the base URL is configured............................................passed
+Given I create a pet with name "HighValueBulldog" category "HighValueBulldog" and status "available".passed
+Then the response status code should be 200.................................passed
+And I extract the pet ID from the response..................................passed
+When I send a PUT request to update the pet status to "sold"................passed
+When I send a GET request to fetch the store inventory......................passed
+When I send a GET request to find pets by status "sold".....................passed
+And the created pet ID should be present in the "sold" pets list............passed
+]]></system-out>
+</testcase>
+<testcase classname="TC2 - Inventory Analysis (Complex Data Parsing)" name="Verify available pet count matches between inventory and findByStatus" time="4.697">
+<system-out><![CDATA[
+Given the base URL is configured............................................passed
+When I send a GET request to fetch the store inventory......................passed
+Then the response status code should be 200.................................passed
+And I extract the available count from inventory............................passed
+When I send a GET request to find pets by status "available"................passed
+And the count of pets returned should match the inventory available count...passed
+]]></system-out>
+</testcase>
+<testcase classname="TC1 - Pet Lifecycle (CRUD and Chaining)" name="Create, retrieve, update and delete a pet - Example #1.1" time="13.525">
+<system-out><![CDATA[
+Given the base URL is configured............................................passed
+Given I have a pet with name "BuddyTest" and status "available".............passed
+When I send a POST request to create the pet................................passed
+Then the response status code should be 200.................................passed
+And I extract the pet ID from the response..................................passed
+When I send a GET request to retrieve the pet by ID.........................passed
+And the pet name should be "BuddyTest"......................................passed
+And the pet status should be "available"....................................passed
+When I send a PUT request to update the pet status to "sold"................passed
+When I send a DELETE request to delete the pet..............................passed
+And the deleted pet should not be retrievable...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="TC1 - Pet Lifecycle (CRUD and Chaining)" name="Create, retrieve, update and delete a pet - Example #1.2" time="13.711">
+<system-out><![CDATA[
+Given the base URL is configured............................................passed
+Given I have a pet with name "MaxTest" and status "pending".................passed
+When I send a POST request to create the pet................................passed
+Then the response status code should be 200.................................passed
+And I extract the pet ID from the response..................................passed
+When I send a GET request to retrieve the pet by ID.........................passed
+And the pet name should be "MaxTest"........................................passed
+And the pet status should be "pending"......................................passed
+When I send a PUT request to update the pet status to "sold"................passed
+When I send a DELETE request to delete the pet..............................passed
+And the deleted pet should not be retrievable...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="TC3 - User Security and Error Handling (Negative Testing)" name="Create a user with an invalid email format - Example #1.1" time="2.038">
+<system-out><![CDATA[
+Given the base URL is configured............................................passed
+When I send a POST request to create a user with username "testUser001" email "invalid_email" and password "pass123".passed
+Then the create user response status code should be 200.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="TC3 - User Security and Error Handling (Negative Testing)" name="Fetch a user that does not exist - Example #1.1" time="1.835">
+<system-out><![CDATA[
+Given the base URL is configured............................................passed
+When I send a GET request to fetch user "nonExistentUser12345"..............passed
+Then the response status code should be 404.................................passed
+And the response message should contain "User not found"....................passed
+]]></system-out>
+</testcase>
+<testcase classname="TC3 - User Security and Error Handling (Negative Testing)" name="Login with incorrect credentials - Example #1.1" time="1.74">
+<system-out><![CDATA[
+Given the base URL is configured............................................passed
+When I send a GET request to login with username "wrongUser" and password "wrongPassword".passed
+Then the response status code should be 200.................................passed
+And the response should not contain a valid session token...................passed
+]]></system-out>
+</testcase>
+</testsuite>

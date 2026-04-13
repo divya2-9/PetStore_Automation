@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="runners.TestRunner" time="52.166" tests="7" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\divya\IdeaProjects\PetStore_Automation\target\test-classes;C:\Users\divya\IdeaProjects\PetStore_Automation\target\classes;C:\Users\divya\.m2\repository\io\rest-assured\rest-assured\5.3.0\rest-assured-5.3.0.jar;C:\Users\divya\.m2\repository\org\apache\groovy\groovy\4.0.6\groovy-4.0.6.jar;C:\Users\divya\.m2\repository\org\apache\groovy\groovy-xml\4.0.6\groovy-xml-4.0.6.jar;C:\Users\divya\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\divya\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\divya\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\divya\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\divya\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\divya\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\divya\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\divya\.m2\repository\io\rest-assured\json-path\5.3.0\json-path-5.3.0.jar;C:\Users\divya\.m2\repository\org\apache\groovy\groovy-json\4.0.6\groovy-json-4.0.6.jar;C:\Users\divya\.m2\repository\io\rest-assured\rest-assured-common\5.3.0\rest-assured-common-5.3.0.jar;C:\Users\divya\.m2\repository\io\rest-assured\xml-path\5.3.0\xml-path-5.3.0.jar;C:\Users\divya\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\divya\.m2\repository\io\cucumber\cucumber-java\7.11.1\cucumber-java-7.11.1.jar;C:\Users\divya\.m2\repository\io\cucumber\cucumber-core\7.11.1\cucumber-core-7.11.1.jar;C:\Users\divya\.m2\repository\io\cucumber\cucumber-gherkin\7.11.1\cucumber-gherkin-7.11.1.jar;C:\Users\divya\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.11.1\cucumber-gherkin-messages-7.11.1.jar;C:\Users\divya\.m2\repository\io\cucumber\gherkin\26.0.3\gherkin-26.0.3.jar;C:\Users\divya\.m2\repository\io\cucumber\messages\21.0.1\messages-21.0.1.jar;C:\Users\divya\.m2\repository\io\cucumber\tag-expressions\5.0.1\tag-expressions-5.0.1.jar;C:\Users\divya\.m2\repository\io\cucumber\cucumber-expressions\16.1.2\cucumber-expressions-16.1.2.jar;C:\Users\divya\.m2\repository\io\cucumber\datatable\7.11.1\datatable-7.11.1.jar;C:\Users\divya\.m2\repository\io\cucumber\cucumber-plugin\7.11.1\cucumber-plugin-7.11.1.jar;C:\Users\divya\.m2\repository\io\cucumber\docstring\7.11.1\docstring-7.11.1.jar;C:\Users\divya\.m2\repository\io\cucumber\html-formatter\20.2.1\html-formatter-20.2.1.jar;C:\Users\divya\.m2\repository\io\cucumber\junit-xml-formatter\0.1.0\junit-xml-formatter-0.1.0.jar;C:\Users\divya\.m2\repository\io\cucumber\ci-environment\9.1.0\ci-environment-9.1.0.jar;C:\Users\divya\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\divya\.m2\repository\io\cucumber\cucumber-junit\7.11.1\cucumber-junit-7.11.1.jar;C:\Users\divya\.m2\repository\io\cucumber\cucumber-picocontainer\7.11.1\cucumber-picocontainer-7.11.1.jar;C:\Users\divya\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\divya\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\divya\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\divya\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\Users\divya\.m2\repository\org\apache\logging\log4j\log4j-core\2.20.0\log4j-core-2.20.0.jar;C:\Users\divya\.m2\repository\org\apache\logging\log4j\log4j-slf4j-impl\2.20.0\log4j-slf4j-impl-2.20.0.jar;C:\Users\divya\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\divya\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.3\jackson-databind-2.15.3.jar;C:\Users\divya\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.3\jackson-annotations-2.15.3.jar;C:\Users\divya\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.3\jackson-core-2.15.3.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\divya\AppData\Local\Temp\surefire1177044484750021345\surefirebooter-20260413121544818_3.jar C:\Users\divya\AppData\Local\Temp\surefire1177044484750021345 2026-04-13T12-15-44_131-jvmRun1 surefire-20260413121544818_1tmp surefire_0-20260413121544818_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\divya\IdeaProjects\PetStore_Automation\target\test-classes;C:\Users\divya\IdeaProjects\PetStore_Automation\target\classes;C:\Users\divya\.m2\repository\io\rest-assured\rest-assured\5.3.0\rest-assured-5.3.0.jar;C:\Users\divya\.m2\repository\org\apache\groovy\groovy\4.0.6\groovy-4.0.6.jar;C:\Users\divya\.m2\repository\org\apache\groovy\groovy-xml\4.0.6\groovy-xml-4.0.6.jar;C:\Users\divya\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\divya\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\divya\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\divya\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\divya\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\divya\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\divya\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\divya\.m2\repository\io\rest-assured\json-path\5.3.0\json-path-5.3.0.jar;C:\Users\divya\.m2\repository\org\apache\groovy\groovy-json\4.0.6\groovy-json-4.0.6.jar;C:\Users\divya\.m2\repository\io\rest-assured\rest-assured-common\5.3.0\rest-assured-common-5.3.0.jar;C:\Users\divya\.m2\repository\io\rest-assured\xml-path\5.3.0\xml-path-5.3.0.jar;C:\Users\divya\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\divya\.m2\repository\io\cucumber\cucumber-java\7.11.1\cucumber-java-7.11.1.jar;C:\Users\divya\.m2\repository\io\cucumber\cucumber-core\7.11.1\cucumber-core-7.11.1.jar;C:\Users\divya\.m2\repository\io\cucumber\cucumber-gherkin\7.11.1\cucumber-gherkin-7.11.1.jar;C:\Users\divya\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.11.1\cucumber-gherkin-messages-7.11.1.jar;C:\Users\divya\.m2\repository\io\cucumber\gherkin\26.0.3\gherkin-26.0.3.jar;C:\Users\divya\.m2\repository\io\cucumber\messages\21.0.1\messages-21.0.1.jar;C:\Users\divya\.m2\repository\io\cucumber\tag-expressions\5.0.1\tag-expressions-5.0.1.jar;C:\Users\divya\.m2\repository\io\cucumber\cucumber-expressions\16.1.2\cucumber-expressions-16.1.2.jar;C:\Users\divya\.m2\repository\io\cucumber\datatable\7.11.1\datatable-7.11.1.jar;C:\Users\divya\.m2\repository\io\cucumber\cucumber-plugin\7.11.1\cucumber-plugin-7.11.1.jar;C:\Users\divya\.m2\repository\io\cucumber\docstring\7.11.1\docstring-7.11.1.jar;C:\Users\divya\.m2\repository\io\cucumber\html-formatter\20.2.1\html-formatter-20.2.1.jar;C:\Users\divya\.m2\repository\io\cucumber\junit-xml-formatter\0.1.0\junit-xml-formatter-0.1.0.jar;C:\Users\divya\.m2\repository\io\cucumber\ci-environment\9.1.0\ci-environment-9.1.0.jar;C:\Users\divya\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\divya\.m2\repository\io\cucumber\cucumber-junit\7.11.1\cucumber-junit-7.11.1.jar;C:\Users\divya\.m2\repository\io\cucumber\cucumber-picocontainer\7.11.1\cucumber-picocontainer-7.11.1.jar;C:\Users\divya\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\divya\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\divya\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\divya\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\Users\divya\.m2\repository\org\apache\logging\log4j\log4j-core\2.20.0\log4j-core-2.20.0.jar;C:\Users\divya\.m2\repository\org\apache\logging\log4j\log4j-slf4j-impl\2.20.0\log4j-slf4j-impl-2.20.0.jar;C:\Users\divya\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\divya\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.3\jackson-databind-2.15.3.jar;C:\Users\divya\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.3\jackson-annotations-2.15.3.jar;C:\Users\divya\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.3\jackson-core-2.15.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\divya"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\divya\IdeaProjects\PetStore_Automation"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\divya\AppData\Local\Temp\surefire1177044484750021345\surefirebooter-20260413121544818_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.12+8-LTS-286"/>
+    <property name="user.name" value="divya"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\divya\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\divya\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.12"/>
+    <property name="user.dir" value="C:\Users\divya\IdeaProjects\PetStore_Automation"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\nodejs\;C:\Program Files\Docker\Docker\resources\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Program Files\Java\jdk-17\bin;C:\Program Files\apache-maven-3.9.14-bin\apache-maven-3.9.14\bin;C:\Users\divya\AppData\Local\Microsoft\WindowsApps;C:\Users\divya\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\divya\AppData\Roaming\npm;C:\Program Files\Java\jdk-21\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.12+8-LTS-286"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="Created pet appears in sold list after status update" classname="TC4 - Cross-Endpoint Data Consistency" time="13.392">
+    <system-out><![CDATA[
+Scenario Outline: Created pet appears in sold list after status update                                 # src/test/resources/features/CrossEndpoint.feature:23
+12:15:47.944 [INFO ] clients.BaseTest - BaseTest initialized. Base URL: https://petstore.swagger.io/v2
+12:15:47.948 [INFO ] stepDefinitions.PetSteps - Base URL configured: https://petstore.swagger.io/v2
+  Given the base URL is configured                                                                     # stepDefinitions.PetSteps.theBaseURLIsConfigured()
+12:15:47.962 [INFO ] clients.PetClient - Creating pet name='HighValueBulldog' status='available' category='HighValueBulldog'
+12:15:51.964 [INFO ] stepDefinitions.PetSteps - Created pet with category: name=HighValueBulldog category=HighValueBulldog status=available
+  Given I create a pet with name "HighValueBulldog" category "HighValueBulldog" and status "available" # stepDefinitions.PetSteps.iCreateAPetWithNameCategoryAndStatus(java.lang.String,java.lang.String,java.lang.String)
+12:15:51.968 [INFO ] stepDefinitions.PetSteps - Status code verified: 200
+  Then the response status code should be 200                                                          # stepDefinitions.PetSteps.theResponseStatusCodeShouldBe(int)
+12:15:52.916 [INFO ] stepDefinitions.PetSteps - Extracted petId=323099
+  And I extract the pet ID from the response                                                           # stepDefinitions.PetSteps.iExtractThePetIdFromTheResponse()
+12:15:52.938 [INFO ] clients.PetClient - Updating pet id=323099 to status='sold'
+12:15:55.082 [INFO ] stepDefinitions.PetSteps - PUT /pet — updated id=323099 to status=sold
+  When I send a PUT request to update the pet status to "sold"                                         # stepDefinitions.PetSteps.iSendAPutRequestToUpdateThePetStatusTo(java.lang.String)
+12:15:55.086 [INFO ] stepDefinitions.PetSteps - Status code verified: 200
+  Then the response status code should be 200                                                          # stepDefinitions.PetSteps.theResponseStatusCodeShouldBe(int)
+12:15:55.090 [INFO ] clients.StoreClient - Fetching store inventory
+12:15:57.232 [INFO ] stepDefinitions.InventorySteps - GET /store/inventory response: {"sold":383,"d":1,"string":10,"Busy":1,"pending":91,"available":478,"Not Available":2,"solsd":1,"bold":1,"availabl":1,"unknown_status":2,"Sold":1,"{{statusP}}":1,"Available":1}
+  When I send a GET request to fetch the store inventory                                               # stepDefinitions.InventorySteps.iSendAGetRequestToFetchTheStoreInventory()
+12:15:57.236 [INFO ] stepDefinitions.PetSteps - Status code verified: 200
+  Then the response status code should be 200                                                          # stepDefinitions.PetSteps.theResponseStatusCodeShouldBe(int)
+12:15:57.238 [INFO ] clients.PetClient - Finding pets with status='sold'
+12:15:59.746 [INFO ] stepDefinitions.PetSteps - GET /pet/findByStatus?status=sold — count: 383
+  When I send a GET request to find pets by status "sold"                                              # stepDefinitions.PetSteps.iSendAGetRequestToFindPetsByStatus(java.lang.String)
+12:15:59.747 [INFO ] stepDefinitions.PetSteps - Status code verified: 200
+  Then the response status code should be 200                                                          # stepDefinitions.PetSteps.theResponseStatusCodeShouldBe(int)
+12:15:59.843 [INFO ] stepDefinitions.PetSteps - Verified pet ID=323099 exists in 'sold' list
+  And the created pet ID should be present in the "sold" pets list                                     # stepDefinitions.PetSteps.theCreatedPetIdShouldBePresentInThePetsList(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Verify available pet count matches between inventory and findByStatus(TC2 - Inventory Analysis " classname="Complex Data Parsing)" time="4.716">
+    <system-out><![CDATA[
+Scenario: Verify available pet count matches between inventory and findByStatus # src/test/resources/features/InventoryAnalysis.feature:6
+12:15:59.885 [INFO ] stepDefinitions.PetSteps - Base URL configured: https://petstore.swagger.io/v2
+  Given the base URL is configured                                              # stepDefinitions.PetSteps.theBaseURLIsConfigured()
+12:15:59.886 [INFO ] clients.StoreClient - Fetching store inventory
+12:16:01.653 [INFO ] stepDefinitions.InventorySteps - GET /store/inventory response: {" Not available":1,"sold":402,"sold ":1,"NOT available":1,"string":3,"special-dog":1,"pending":86,"available":462,"avalible":1,"available_smart":1,"PENDING":5,"In Heaven":1,"available, sold":1,"avaliable":1,"Available":1}
+  When I send a GET request to fetch the store inventory                        # stepDefinitions.InventorySteps.iSendAGetRequestToFetchTheStoreInventory()
+12:16:01.654 [INFO ] stepDefinitions.PetSteps - Status code verified: 200
+  Then the response status code should be 200                                   # stepDefinitions.PetSteps.theResponseStatusCodeShouldBe(int)
+12:16:01.683 [INFO ] stepDefinitions.InventorySteps - Inventory available count: 462
+  And I extract the available count from inventory                              # stepDefinitions.InventorySteps.iExtractTheAvailableCountFromInventory()
+12:16:01.685 [INFO ] clients.PetClient - Finding pets with status='available'
+12:16:04.502 [INFO ] stepDefinitions.PetSteps - GET /pet/findByStatus?status=available — count: 462
+  When I send a GET request to find pets by status "available"                  # stepDefinitions.PetSteps.iSendAGetRequestToFindPetsByStatus(java.lang.String)
+12:16:04.521 [INFO ] stepDefinitions.PetSteps - Status code verified: 200
+  Then the response status code should be 200                                   # stepDefinitions.PetSteps.theResponseStatusCodeShouldBe(int)
+12:16:04.562 [INFO ] stepDefinitions.InventorySteps - Inventory available count: 462 | findByStatus count: 462
+12:16:04.579 [INFO ] stepDefinitions.InventorySteps - TC2 verified: findByStatus count (462) > 0
+  And the count of pets returned should match the inventory available count     # stepDefinitions.InventorySteps.theCountOfPetsReturnedShouldMatchTheInventoryAvailableCount()
+]]></system-out>
+  </testcase>
+  <testcase name="Create, retrieve, update and delete a pet #1(TC1 - Pet Lifecycle " classname="CRUD and Chaining)" time="13.547">
+    <system-out><![CDATA[
+Scenario Outline: Create, retrieve, update and delete a pet       # src/test/resources/features/PetLifecycle.feature:26
+12:16:04.603 [INFO ] stepDefinitions.PetSteps - Base URL configured: https://petstore.swagger.io/v2
+  Given the base URL is configured                                # stepDefinitions.PetSteps.theBaseURLIsConfigured()
+12:16:04.604 [INFO ] stepDefinitions.PetSteps - Stored pet details: name=BuddyTest status=available
+  Given I have a pet with name "BuddyTest" and status "available" # stepDefinitions.PetSteps.iHaveAPetWithNameAndStatus(java.lang.String,java.lang.String)
+12:16:04.605 [INFO ] clients.PetClient - Creating pet with name='BuddyTest' status='available'
+12:16:06.653 [INFO ] stepDefinitions.PetSteps - POST /pet response: {"id":469249,"name":"BuddyTest","photoUrls":[],"tags":[],"status":"available"}
+  When I send a POST request to create the pet                    # stepDefinitions.PetSteps.iSendAPostRequestToCreateThePet()
+12:16:06.654 [INFO ] stepDefinitions.PetSteps - Status code verified: 200
+  Then the response status code should be 200                     # stepDefinitions.PetSteps.theResponseStatusCodeShouldBe(int)
+12:16:06.675 [INFO ] stepDefinitions.PetSteps - Extracted petId=469249
+  And I extract the pet ID from the response                      # stepDefinitions.PetSteps.iExtractThePetIdFromTheResponse()
+12:16:06.677 [INFO ] clients.PetClient - Fetching pet with id=469249
+12:16:08.702 [WARN ] stepDefinitions.PetSteps - GET /pet/469249 returned 404 on attempt 1. Retrying...
+12:16:10.212 [INFO ] clients.PetClient - Fetching pet with id=469249
+12:16:12.501 [INFO ] stepDefinitions.PetSteps - GET /pet/469249 succeeded on attempt 2
+12:16:12.501 [INFO ] stepDefinitions.PetSteps - GET /pet/469249 final response: {"id":469249,"name":"BuddyTest","photoUrls":[],"tags":[],"status":"available"}
+  When I send a GET request to retrieve the pet by ID             # stepDefinitions.PetSteps.iSendAGetRequestToRetrieveThePetByID()
+12:16:12.503 [INFO ] stepDefinitions.PetSteps - Status code verified: 200
+  Then the response status code should be 200                     # stepDefinitions.PetSteps.theResponseStatusCodeShouldBe(int)
+  And the pet name should be "BuddyTest"                          # stepDefinitions.PetSteps.thePetNameShouldBe(java.lang.String)
+  And the pet status should be "available"                        # stepDefinitions.PetSteps.thePetStatusShouldBe(java.lang.String)
+12:16:12.538 [INFO ] clients.PetClient - Updating pet id=469249 to status='sold'
+12:16:14.125 [INFO ] stepDefinitions.PetSteps - PUT /pet — updated id=469249 to status=sold
+  When I send a PUT request to update the pet status to "sold"    # stepDefinitions.PetSteps.iSendAPutRequestToUpdateThePetStatusTo(java.lang.String)
+12:16:14.127 [INFO ] stepDefinitions.PetSteps - Status code verified: 200
+  Then the response status code should be 200                     # stepDefinitions.PetSteps.theResponseStatusCodeShouldBe(int)
+12:16:14.128 [INFO ] clients.PetClient - Deleting pet with id=469249
+12:16:16.176 [INFO ] stepDefinitions.PetSteps - DELETE /pet/469249 — status code: 200
+  When I send a DELETE request to delete the pet                  # stepDefinitions.PetSteps.iSendADeleteRequestToDeleteThePet()
+12:16:16.177 [INFO ] stepDefinitions.PetSteps - Status code verified: 200
+  Then the response status code should be 200                     # stepDefinitions.PetSteps.theResponseStatusCodeShouldBe(int)
+12:16:16.178 [INFO ] clients.PetClient - Fetching pet with id=469249
+12:16:18.120 [WARN ] stepDefinitions.PetSteps - Known Petstore API issue: pet 469249 still returns 200 after delete
+  And the deleted pet should not be retrievable                   # stepDefinitions.PetSteps.theDeletedPetShouldNotBeRetrievable()
+]]></system-out>
+  </testcase>
+  <testcase name="Create, retrieve, update and delete a pet #2(TC1 - Pet Lifecycle " classname="CRUD and Chaining)" time="13.709">
+    <system-out><![CDATA[
+Scenario Outline: Create, retrieve, update and delete a pet    # src/test/resources/features/PetLifecycle.feature:27
+12:16:18.134 [INFO ] stepDefinitions.PetSteps - Base URL configured: https://petstore.swagger.io/v2
+  Given the base URL is configured                             # stepDefinitions.PetSteps.theBaseURLIsConfigured()
+12:16:18.135 [INFO ] stepDefinitions.PetSteps - Stored pet details: name=MaxTest status=pending
+  Given I have a pet with name "MaxTest" and status "pending"  # stepDefinitions.PetSteps.iHaveAPetWithNameAndStatus(java.lang.String,java.lang.String)
+12:16:18.136 [INFO ] clients.PetClient - Creating pet with name='MaxTest' status='pending'
+12:16:19.963 [INFO ] stepDefinitions.PetSteps - POST /pet response: {"id":451015,"name":"MaxTest","photoUrls":[],"tags":[],"status":"pending"}
+  When I send a POST request to create the pet                 # stepDefinitions.PetSteps.iSendAPostRequestToCreateThePet()
+12:16:19.965 [INFO ] stepDefinitions.PetSteps - Status code verified: 200
+  Then the response status code should be 200                  # stepDefinitions.PetSteps.theResponseStatusCodeShouldBe(int)
+12:16:19.991 [INFO ] stepDefinitions.PetSteps - Extracted petId=451015
+  And I extract the pet ID from the response                   # stepDefinitions.PetSteps.iExtractThePetIdFromTheResponse()
+12:16:19.992 [INFO ] clients.PetClient - Fetching pet with id=451015
+12:16:22.332 [WARN ] stepDefinitions.PetSteps - GET /pet/451015 returned 404 on attempt 1. Retrying...
+12:16:23.847 [INFO ] clients.PetClient - Fetching pet with id=451015
+12:16:26.209 [INFO ] stepDefinitions.PetSteps - GET /pet/451015 succeeded on attempt 2
+12:16:26.210 [INFO ] stepDefinitions.PetSteps - GET /pet/451015 final response: {"id":451015,"name":"MaxTest","photoUrls":[],"tags":[],"status":"pending"}
+  When I send a GET request to retrieve the pet by ID          # stepDefinitions.PetSteps.iSendAGetRequestToRetrieveThePetByID()
+12:16:26.211 [INFO ] stepDefinitions.PetSteps - Status code verified: 200
+  Then the response status code should be 200                  # stepDefinitions.PetSteps.theResponseStatusCodeShouldBe(int)
+  And the pet name should be "MaxTest"                         # stepDefinitions.PetSteps.thePetNameShouldBe(java.lang.String)
+  And the pet status should be "pending"                       # stepDefinitions.PetSteps.thePetStatusShouldBe(java.lang.String)
+12:16:26.241 [INFO ] clients.PetClient - Updating pet id=451015 to status='sold'
+12:16:27.851 [INFO ] stepDefinitions.PetSteps - PUT /pet — updated id=451015 to status=sold
+  When I send a PUT request to update the pet status to "sold" # stepDefinitions.PetSteps.iSendAPutRequestToUpdateThePetStatusTo(java.lang.String)
+12:16:27.852 [INFO ] stepDefinitions.PetSteps - Status code verified: 200
+  Then the response status code should be 200                  # stepDefinitions.PetSteps.theResponseStatusCodeShouldBe(int)
+12:16:27.853 [INFO ] clients.PetClient - Deleting pet with id=451015
+12:16:29.424 [INFO ] stepDefinitions.PetSteps - DELETE /pet/451015 — status code: 200
+  When I send a DELETE request to delete the pet               # stepDefinitions.PetSteps.iSendADeleteRequestToDeleteThePet()
+12:16:29.426 [INFO ] stepDefinitions.PetSteps - Status code verified: 200
+  Then the response status code should be 200                  # stepDefinitions.PetSteps.theResponseStatusCodeShouldBe(int)
+12:16:29.427 [INFO ] clients.PetClient - Fetching pet with id=451015
+12:16:31.841 [WARN ] stepDefinitions.PetSteps - Known Petstore API issue: pet 451015 still returns 200 after delete
+  And the deleted pet should not be retrievable                # stepDefinitions.PetSteps.theDeletedPetShouldNotBeRetrievable()
+]]></system-out>
+  </testcase>
+  <testcase name="Create a user with an invalid email format(TC3 - User Security and Error Handling " classname="Negative Testing)" time="2.05">
+    <system-out><![CDATA[
+Scenario Outline: Create a user with an invalid email format                                                           # src/test/resources/features/UserSecurity.feature:12
+12:16:31.859 [INFO ] stepDefinitions.PetSteps - Base URL configured: https://petstore.swagger.io/v2
+  Given the base URL is configured                                                                                     # stepDefinitions.PetSteps.theBaseURLIsConfigured()
+12:16:31.865 [INFO ] clients.UserClient - Creating user username='testUser001' email='invalid_email'
+12:16:33.889 [INFO ] stepDefinitions.UserSteps - POST /user — username=testUser001 email=invalid_email status=200
+  When I send a POST request to create a user with username "testUser001" email "invalid_email" and password "pass123" # stepDefinitions.UserSteps.iSendAPostRequestToCreateAUser(java.lang.String,java.lang.String,java.lang.String)
+  Then the create user response status code should be 200                                                              # stepDefinitions.UserSteps.theCreateUserResponseStatusCodeShouldBe(int)
+]]></system-out>
+  </testcase>
+  <testcase name="Fetch a user that does not exist(TC3 - User Security and Error Handling " classname="Negative Testing)" time="1.846">
+    <system-out><![CDATA[
+Scenario Outline: Fetch a user that does not exist               # src/test/resources/features/UserSecurity.feature:21
+12:16:33.901 [INFO ] stepDefinitions.PetSteps - Base URL configured: https://petstore.swagger.io/v2
+  Given the base URL is configured                               # stepDefinitions.PetSteps.theBaseURLIsConfigured()
+12:16:33.901 [INFO ] clients.UserClient - Fetching user with username='nonExistentUser12345'
+12:16:35.730 [INFO ] stepDefinitions.UserSteps - GET /user/nonExistentUser12345 — status=404
+  When I send a GET request to fetch user "nonExistentUser12345" # stepDefinitions.UserSteps.iSendAGetRequestToFetchUser(java.lang.String)
+12:16:35.731 [INFO ] stepDefinitions.PetSteps - Status code verified: 404
+  Then the response status code should be 404                    # stepDefinitions.PetSteps.theResponseStatusCodeShouldBe(int)
+12:16:35.735 [INFO ] stepDefinitions.UserSteps - Response message verified: 'User not found'
+  And the response message should contain "User not found"       # stepDefinitions.UserSteps.theResponseMessageShouldContain(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="Login with incorrect credentials(TC3 - User Security and Error Handling " classname="Negative Testing)" time="1.742">
+    <system-out><![CDATA[
+Scenario Outline: Login with incorrect credentials                                          # src/test/resources/features/UserSecurity.feature:30
+12:16:35.742 [INFO ] stepDefinitions.PetSteps - Base URL configured: https://petstore.swagger.io/v2
+  Given the base URL is configured                                                          # stepDefinitions.PetSteps.theBaseURLIsConfigured()
+12:16:35.743 [INFO ] clients.UserClient - Logging in with username='wrongUser'
+12:16:37.474 [INFO ] stepDefinitions.UserSteps - GET /user/login — username=wrongUser status=200
+  When I send a GET request to login with username "wrongUser" and password "wrongPassword" # stepDefinitions.UserSteps.iSendAGetRequestToLoginWithUsernameAndPassword(java.lang.String,java.lang.String)
+12:16:37.476 [INFO ] stepDefinitions.PetSteps - Status code verified: 200
+  Then the response status code should be 200                                               # stepDefinitions.PetSteps.theResponseStatusCodeShouldBe(int)
+12:16:37.477 [INFO ] stepDefinitions.UserSteps - Login response status: 200
+12:16:37.477 [INFO ] stepDefinitions.UserSteps - Login response body: {"code":200,"type":"unknown","message":"logged in user session:1776062801033"}
+12:16:37.479 [WARN ] stepDefinitions.UserSteps - KNOWN API LIMITATION: Petstore /user/login returns a session token even for invalid credentials. In a real system this would return 401 Unauthorized.
+12:16:37.480 [INFO ] stepDefinitions.UserSteps - TC3 login negative test completed — API limitation documented
+  And the response should not contain a valid session token                                 # stepDefinitions.UserSteps.theResponseShouldNotContainAValidSessionToken()
+]]></system-out>
+  </testcase>
+</testsuite>
