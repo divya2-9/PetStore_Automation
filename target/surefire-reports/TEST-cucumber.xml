@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="51.137" tests="7" skipped="0" failures="0" errors="0">
-<testcase classname="TC4 - Cross-Endpoint Data Consistency" name="Created pet appears in sold list after status update - Example #1.1" time="13.208">
+<testsuite name="Cucumber" time="40.993" tests="7" skipped="0" failures="0" errors="0">
+<testcase classname="TC4 - Cross-Endpoint Data Consistency" name="Created pet appears in sold list after status update - Example #1.1" time="11.973">
 <system-out><![CDATA[
 Given the base URL is configured............................................passed
 Given I create a pet with name "HighValueBulldog" category "HighValueBulldog" and status "available".passed
@@ -12,7 +12,7 @@ When I send a GET request to find pets by status "sold".....................pass
 And the created pet ID should be present in the "sold" pets list............passed
 ]]></system-out>
 </testcase>
-<testcase classname="TC2 - Inventory Analysis (Complex Data Parsing)" name="Verify available pet count matches between inventory and findByStatus" time="4.697">
+<testcase classname="TC2 - Inventory Analysis (Complex Data Parsing)" name="Verify available pet count matches between inventory and findByStatus" time="6.063">
 <system-out><![CDATA[
 Given the base URL is configured............................................passed
 When I send a GET request to fetch the store inventory......................passed
@@ -22,7 +22,7 @@ When I send a GET request to find pets by status "available"................pass
 And the count of pets returned should match the inventory available count...passed
 ]]></system-out>
 </testcase>
-<testcase classname="TC1 - Pet Lifecycle (CRUD and Chaining)" name="Create, retrieve, update and delete a pet - Example #1.1" time="13.525">
+<testcase classname="TC1 - Pet Lifecycle (CRUD and Chaining)" name="Create, retrieve, update and delete a pet - Example #1.1" time="8.787">
 <system-out><![CDATA[
 Given the base URL is configured............................................passed
 Given I have a pet with name "BuddyTest" and status "available".............passed
@@ -37,7 +37,7 @@ When I send a DELETE request to delete the pet..............................pass
 And the deleted pet should not be retrievable...............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="TC1 - Pet Lifecycle (CRUD and Chaining)" name="Create, retrieve, update and delete a pet - Example #1.2" time="13.711">
+<testcase classname="TC1 - Pet Lifecycle (CRUD and Chaining)" name="Create, retrieve, update and delete a pet - Example #1.2" time="8.898">
 <system-out><![CDATA[
 Given the base URL is configured............................................passed
 Given I have a pet with name "MaxTest" and status "pending".................passed
@@ -52,14 +52,14 @@ When I send a DELETE request to delete the pet..............................pass
 And the deleted pet should not be retrievable...............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="TC3 - User Security and Error Handling (Negative Testing)" name="Create a user with an invalid email format - Example #1.1" time="2.038">
+<testcase classname="TC3 - User Security and Error Handling (Negative Testing)" name="Create a user with an invalid email format - Example #1.1" time="1.525">
 <system-out><![CDATA[
 Given the base URL is configured............................................passed
 When I send a POST request to create a user with username "testUser001" email "invalid_email" and password "pass123".passed
 Then the create user response status code should be 200.....................passed
 ]]></system-out>
 </testcase>
-<testcase classname="TC3 - User Security and Error Handling (Negative Testing)" name="Fetch a user that does not exist - Example #1.1" time="1.835">
+<testcase classname="TC3 - User Security and Error Handling (Negative Testing)" name="Fetch a user that does not exist - Example #1.1" time="1.629">
 <system-out><![CDATA[
 Given the base URL is configured............................................passed
 When I send a GET request to fetch user "nonExistentUser12345"..............passed
@@ -67,7 +67,7 @@ Then the response status code should be 404.................................pass
 And the response message should contain "User not found"....................passed
 ]]></system-out>
 </testcase>
-<testcase classname="TC3 - User Security and Error Handling (Negative Testing)" name="Login with incorrect credentials - Example #1.1" time="1.74">
+<testcase classname="TC3 - User Security and Error Handling (Negative Testing)" name="Login with incorrect credentials - Example #1.1" time="1.732">
 <system-out><![CDATA[
 Given the base URL is configured............................................passed
 When I send a GET request to login with username "wrongUser" and password "wrongPassword".passed

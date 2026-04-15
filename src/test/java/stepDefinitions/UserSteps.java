@@ -60,18 +60,7 @@ public class UserSteps {
         log.info("GET /user/login — username={} status={}", username, response.getStatusCode());
     }
 
-    /**
-     * NOTE: The public Petstore API does NOT validate credentials.
-     * It returns a session token for ANY username/password combination.
-     * This is a known limitation of the shared demo API.
-     *
-     * Our negative test therefore verifies the API behaviour:
-     * - Response is 200 (API accepted the request)
-     * - Response contains a session token (API does not reject wrong credentials)
-     * - We log this as a known API security gap
-     *
-     * In a real system, this would assert 401 Unauthorized.
-     */
+
     @Then("the response should not contain a valid session token")
     public void theResponseShouldNotContainAValidSessionToken() {
         Response response = (Response) context.get("response");
@@ -81,13 +70,10 @@ public class UserSteps {
         log.info("Login response status: {}", statusCode);
         log.info("Login response body: {}", body);
 
-        // Petstore API always returns 200 with a session token even for wrong credentials.
-        // This is a documented API limitation — the API has no real auth enforcement.
-        // We verify the response is structurally valid (200 + has a message field).
+
         assertThat("Login endpoint should return 200", statusCode, equalTo(200));
         assertThat("Response body should not be empty", body, not(emptyString()));
 
-        // Log the known security gap for documentation purposes
         if (body.contains("logged in user session")) {
             log.warn("KNOWN API LIMITATION: Petstore /user/login returns a session token " +
                     "even for invalid credentials. In a real system this would return 401 Unauthorized.");

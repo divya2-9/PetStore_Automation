@@ -68,10 +68,7 @@ public class PetSteps {
         log.info("Extracted petId={}", petId);
     }
 
-    /**
-     * Petstore is a public API that sometimes delays persisting data.
-     * Retry up to 3 times with 1.5s wait before giving up.
-     */
+
     @When("I send a GET request to retrieve the pet by ID")
     public void iSendAGetRequestToRetrieveThePetByID() {
         long petId = (long) context.get("petId");

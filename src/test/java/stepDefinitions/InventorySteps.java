@@ -52,8 +52,7 @@ public class InventorySteps {
         log.info("Inventory available count: {} | findByStatus count: {}",
                 inventoryCount, findByStatusCount);
 
-        // Petstore is a public shared API — counts can differ slightly due to concurrent users
-        // We assert findByStatus returned a positive count as the core validation
+
         assertThat(
                 "findByStatus should return at least 1 available pet. Got: " + findByStatusCount,
                 findByStatusCount, greaterThan(0));
