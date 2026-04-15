@@ -1,31 +1,29 @@
 🐾 PetStore API BDD Automation Framework
-Veeva Assignment — API Test Automation for Fresh Graduates A production-grade BDD 
-automation framework built with Java, REST Assured, and Cucumber targeting the Petstore Swagger API.
+   -Veeva Systems Project
 ________________________________________
 📌 Git Repository : 
 🔗 https://github.com/divya2-9/PetStore_Automation
 ________________________________________
-👥 Team Members & Roles	
-Divya	:	Project setup, Maven/pom.xml configuration, BaseTest, PetClient,
-             StoreClient, ScenarioContext, TC1 Pet Lifecycle, TC2 Inventory Analysis, Log4J                          
-             configuration, Git setup and version control
-P.LASYA : 	UserClient, TC3 User Security & Error Handling, TC4 Cross-Endpoint Data Consistency, 
+👥 Team Members & Roles	 : 
+1. Divya	:	Project setup, Maven/pom.xml configuration, BaseTest, PetClient,
+             StoreClient, ScenarioContext, TC1 Pet Lifecycle, TC2 Inventory Analysis, Log4J configuration, Git setup and version control
+2. P.Lasya Priya : 	UserClient, TC3 User Security & Error Handling, TC4 Cross-Endpoint Data Consistency, 
             Postman   collection, Architecture diagram, README documentation
 Both members participated in code reviews, debugging, and final integration testing.
 ________________________________________
 🛠️ Tech Stack :
 
-Java	17	
-REST Assured	5.3.0	
-Cucumber	7.11.1	
-JUnit	4.13.2
-Maven	3.8+	
-Log4J 2	2.20.0
-Jackson	2.15.3	
-PicoContainer	7.11.1	
-IntelliJ IDEA	
-GitHub	
-Postman
+1. Java	17	
+2. REST Assured	5.3.0	
+3. Cucumber	7.11.1	
+4. JUnit	4.13.2
+5. Maven	3.8+	
+6. Log4J 2	2.20.0
+7. Jackson	2.15.3	
+8. PicoContainer	7.11.1	
+9. IntelliJ IDEA	
+10. GitHub	
+11. Postman
 ________________________________________
 📁 Project Structure:
 
@@ -103,38 +101,39 @@ ________________________________________
 •	✅ IntelliJ IDEA 
 ________________________________________
 🚀 Setup & How to Run : 
-Clone : git clone https://github.com/divya2-9/PetStore_Automation.git/
-cd PetStore_Automation/
-Install dependencies/
-mvn clean install -DskipTests/
-Run all tests/
-mvn clean test/
-Run a specific feature file/
-mvn clean test -Dcucumber.features=src/test/resources/features/PetLifecycle.feature/
+1. Clone : git clone https://github.com/divya2-9/PetStore_Automation.git/
+2. cd PetStore_Automation/
+3. Install dependencies/
+4. mvn clean install -DskipTests/
+5. Run all tests/
+6. mvn clean test/
+7. Run a specific feature file/
+8. mvn clean test -Dcucumber.features=src/test/resources/features/PetLifecycle.feature/
 ________________________________________
 🧪 Feature Files & Test Cases : 
-TC1 — Pet Lifecycle (CRUD & Chaining)
-src/test/resources/features/PetLifecycle.feature
+1. TC1 — Pet Lifecycle (CRUD & Chaining)
+   src/test/resources/features/PetLifecycle.feature
 
-TC2 — Inventory Analysis (Complex Data Parsing)
-src/test/resources/features/InventoryAnalysis.feature
+2. TC2 — Inventory Analysis (Complex Data Parsing)
+   src/test/resources/features/InventoryAnalysis.feature
 
-TC3 — User Security & Error Handling (Negative Testing)
-src/test/resources/features/UserSecurity.feature
+3. TC3 — User Security & Error Handling (Negative Testing)
+   src/test/resources/features/UserSecurity.feature
 
-TC4 — Cross-Endpoint Data Consistency
-src/test/resources/features/CrossEndpoint.feature
+4. TC4 — Cross-Endpoint Data Consistency
+   src/test/resources/features/CrossEndpoint.feature
 ________________________________________
-📈 Execution Reports
-After running mvn clean test reports are generated at:
-Report	Location	How to View
-Cucumber HTML	target/cucumber-reports/cucumber.html	Open in Chrome
-Cucumber JSON	target/cucumber-reports/cucumber.json	CI tool integration
-Surefire XML	target/surefire-reports/TEST-cucumber.xml	Maven/Jenkins reports
-Log file	target/logs/automation.log	Open in any text editor
--------------------------------------------------------
- T E S T S
--------------------------------------------------------
+📈 Execution Reports :
+After running "mvn clean test" reports are generated at:
+Report	Location ,
+How to View : 
+1. Cucumber HTML	target/cucumber-reports/cucumber.html	Open in Chrome
+2. Cucumber JSON	target/cucumber-reports/cucumber.json	CI tool integration
+3. Surefire XML	target/surefire-reports/TEST-cucumber.xml	Maven/Jenkins reports
+4. Log file	target/logs/automation.log	Open in any text editor
+________________________________________
+TESTS
+________________________________________
 Running runners.TestRunner
 
 Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
@@ -149,6 +148,8 @@ Total time: ~52s
 5	TC3 — Create user with invalid email	✅ PASSED
 6	TC3 — Fetch non-existent user (404)	✅ PASSED
 7	TC3 — Login with wrong credentials	✅ PASSED
+<img width="1815" height="812" alt="image" src="https://github.com/user-attachments/assets/2e810039-0d72-4eba-b7f9-38453fc8a066" />
+
 ________________________________________
 📬 Postman Collection : 
 Import files from the /postman folder:
@@ -161,12 +162,12 @@ Value:    https://petstore.swagger.io/v2
 Usage:    {{url}}/pet/123
 ________________________________________
 ⚠️  API Limitations : 
-The Petstore API is a public shared demo with no data isolation:
-Issue	How Handled,
-Pet not immediately available after POST	Retry GET up to 3 times with 1.5s wait,
-Deleted pet may still return 200	Accepts 200 or 404, logs warning,
-Login returns token for any credentials	Documents API security gap, asserts response structure,
-Inventory counts fluctuate between calls	Both endpoints queried in same test run.
+1. The Petstore API is a public shared demo with no data isolation:
+   How Issues are Handled,
+2. Pet not immediately available after POST	Retry GET up to 3 times with 1.5s wait,
+3. Deleted pet may still return 200	Accepts 200 or 404, logs warning
+   Login returns token for any credentials	Documents API security gap, asserts response structure,
+   Inventory counts fluctuate between calls	Both endpoints queried in same test run.
 ________________________________________
 🔧 Key Design Decisions : 
 •	Client Pattern — API logic in *Client.java, completely separate from step logic
