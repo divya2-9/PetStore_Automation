@@ -162,7 +162,7 @@ Total time: ~52s
 6	TC3 — Fetch non-existent user (404)	✅ PASSED
 7	TC3 — Login with wrong credentials	✅ PASSED
 ________________________________________
-📬 Postman Collection
+📬 Postman Collection : 
 Import files from the /postman folder:
 •	PetStore_Collection.json — all 4 assignments
 •	PetStore_Environment.json — environment with url variable
@@ -178,7 +178,7 @@ Variable: url
 Value:    https://petstore.swagger.io/v2
 Usage:    {{url}}/pet/123
 ________________________________________
-⚠️  API Limitations
+⚠️  API Limitations : 
 The Petstore API is a public shared demo with no data isolation:
 Issue	How Handled
 Pet not immediately available after POST	Retry GET up to 3 times with 1.5s wait
@@ -186,26 +186,26 @@ Deleted pet may still return 200	Accepts 200 or 404, logs warning
 Login returns token for any credentials	Documents API security gap, asserts response structure
 Inventory counts fluctuate between calls	Both endpoints queried in same test run
 ________________________________________
-🔧 Key Design Decisions
+🔧 Key Design Decisions : 
 •	Client Pattern — API logic in *Client.java, completely separate from step logic
 •	ScenarioContext — PicoContainer injects shared state across step classes
 •	Random 6-digit IDs — avoids Long.MAX_VALUE overflow on public Petstore API
 •	Data-driven testing — all values in Examples: tables, zero hardcoding in Java
 •	Retry mechanism — handles eventual consistency of public API gracefully
 ________________________________________
-📝 API Reference
+📝 API Reference : 
 •	Swagger UI: https://petstore.swagger.io/
 •	Base URL: https://petstore.swagger.io/v2
 __________________________________________
-👨‍💻 Author
+👨‍💻 Author : 
 Divya Undapalli
 __________________________________________
-📌 Future Enhancements
+📌 Future Enhancements : 
 🔹 Add Logging (Log4j / SLF4J)
 🔹 Implement Hooks (Before/After)
 🔹 CI/CD Integration (GitHub Actions / GitLab CI)
 __________________________________________
-⭐ Conclusion
+⭐ Conclusion : 
 This framework demonstrates a scalable, maintainable, and real-world API automation approach using BDD principles,
 along with handling real-world challenges like API inconsistency and dynamic data validation.
 
