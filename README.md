@@ -1,30 +1,34 @@
 🐾 PetStore API BDD Automation Framework
-Veeva Assignment — API Test Automation for Fresh Graduates A production-grade BDD automation framework built with Java, REST Assured, and Cucumber targeting the Petstore Swagger API.
+Veeva Assignment — API Test Automation for Fresh Graduates A production-grade BDD 
+automation framework built with Java, REST Assured, and Cucumber targeting the Petstore Swagger API.
 ________________________________________
-📌 Git Repository
+📌 Git Repository : 
 🔗 https://github.com/divya2-9/PetStore_Automation
 ________________________________________
-👥 Team Members & Roles
-Member		Responsibilities
-Divya		Project setup, Maven/pom.xml configuration, BaseTest, PetClient, StoreClient, ScenarioContext, TC1 Pet Lifecycle, TC2 Inventory Analysis, Log4J configuration, Git setup and version control
-P. M. S.                                                  LASYA PRIYA	UserClient, TC3 User Security & Error Handling, TC4 Cross-Endpoint Data Consistency, Postman   collection, Architecture diagram, README documentation
+👥 Team Members & Roles	
+Divya	:	Project setup, Maven/pom.xml configuration, BaseTest, PetClient,
+             StoreClient, ScenarioContext, TC1 Pet Lifecycle, TC2 Inventory Analysis, Log4J                          
+             configuration, Git setup and version control
+P.LASYA : 	UserClient, TC3 User Security & Error Handling, TC4 Cross-Endpoint Data Consistency, 
+            Postman   collection, Architecture diagram, README documentation
 Both members participated in code reviews, debugging, and final integration testing.
 ________________________________________
-🛠️ Tech Stack
-Tool / Library	Version	Purpose
-Java	17	Core programming language
-REST Assured	5.3.0	HTTP API testing library
-Cucumber	7.11.1	BDD framework — Gherkin feature files
-JUnit	4.13.2	Test runner integrated with Cucumber
-Maven	3.8+	Build tool and dependency management
-Log4J 2	2.20.0	Logging to console and rolling file
-Jackson	2.15.3	JSON serialization for request bodies
-PicoContainer	7.11.1	Dependency injection for ScenarioContext
-IntelliJ IDEA	Latest	IDE
-GitHub	—	Version control
-Postman	Latest	Manual API exploration and collection
+🛠️ Tech Stack :
+
+Java	17	
+REST Assured	5.3.0	
+Cucumber	7.11.1	
+JUnit	4.13.2
+Maven	3.8+	
+Log4J 2	2.20.0
+Jackson	2.15.3	
+PicoContainer	7.11.1	
+IntelliJ IDEA	
+GitHub	
+Postman
 ________________________________________
-📁 Project Structure
+📁 Project Structure:
+
 PetStore_Automation/
 │
 ├── pom.xml                                         # Maven build config & all dependencies
@@ -98,44 +102,28 @@ ________________________________________
 •	✅ Git 
 •	✅ IntelliJ IDEA 
 ________________________________________
-🚀 Setup & How to Run
-Clone the repository
-git clone https://github.com/divya2-9/PetStore_Automation.git
-cd PetStore_Automation
-Install dependencies
-mvn clean install -DskipTests
-Run all tests
-mvn clean test
-Run a specific feature file
-mvn clean test -Dcucumber.features=src/test/resources/features/PetLifecycle.feature
+🚀 Setup & How to Run : 
+Clone : git clone https://github.com/divya2-9/PetStore_Automation.git/
+cd PetStore_Automation/
+Install dependencies/
+mvn clean install -DskipTests/
+Run all tests/
+mvn clean test/
+Run a specific feature file/
+mvn clean test -Dcucumber.features=src/test/resources/features/PetLifecycle.feature/
 ________________________________________
-🧪 Feature Files & Test Cases
+🧪 Feature Files & Test Cases : 
 TC1 — Pet Lifecycle (CRUD & Chaining)
 src/test/resources/features/PetLifecycle.feature
-Step	Endpoint	Validation
-POST /pet	Create pet with unique name + status "available"	Status 200
-GET /pet/{id}	Retrieve using extracted ID	Name and status match
-PUT /pet	Update status to "sold"	Status 200
-DELETE /pet/{id}	Delete the pet	Status 200
-GET /pet/{id}	Pet should not be found	Status 404 or removed
+
 TC2 — Inventory Analysis (Complex Data Parsing)
 src/test/resources/features/InventoryAnalysis.feature
-Step	Endpoint	Validation
-GET /store/inventory	Fetch inventory map	Extract "available" count
-GET /pet/findByStatus?status=available	Count returned list	Count matches inventory
+
 TC3 — User Security & Error Handling (Negative Testing)
 src/test/resources/features/UserSecurity.feature
-Step	Endpoint	Validation
-POST /user	Invalid email format	Status 200 (API accepts)
-GET /user/nonExistentUser123	Non-existent user	Status 404 + "User not found"
-GET /user/login	Wrong credentials	No valid session (API limitation logged)
+
 TC4 — Cross-Endpoint Data Consistency
 src/test/resources/features/CrossEndpoint.feature
-Step	Endpoint	Validation
-POST /pet	Create with category "HighValueBulldog"	Status 200, extract ID
-PUT /pet	Update status to "sold"	Status 200
-GET /store/inventory	Fetch updated inventory	Status 200
-GET /pet/findByStatus?status=sold	Find pet in sold list	Java Stream finds pet ID ✅
 ________________________________________
 📈 Execution Reports
 After running mvn clean test reports are generated at:
@@ -166,13 +154,7 @@ ________________________________________
 Import files from the /postman folder:
 •	PetStore_Collection.json — all 4 assignments
 •	PetStore_Environment.json — environment with url variable
-Assignment	Method	Endpoint	Test Assertion
-A1	GET	{{url}}/pet/findByStatus?status=available	Status code is 200
-A2	POST	{{url}}/pet with JSON body	Response contains pet name
-A3a	GET	{{url}}/pet/123456	Status 200 (valid pet)
-A3b	GET	{{url}}/pet/999999	Status 404 (not found)
-A3c	POST	{{url}}/pet empty body	Status 400 or 405
-A4	ALL	{{url}}/...	Environment variable url used
+
 Environment variable:
 Variable: url
 Value:    https://petstore.swagger.io/v2
@@ -180,11 +162,11 @@ Usage:    {{url}}/pet/123
 ________________________________________
 ⚠️  API Limitations : 
 The Petstore API is a public shared demo with no data isolation:
-Issue	How Handled
-Pet not immediately available after POST	Retry GET up to 3 times with 1.5s wait
-Deleted pet may still return 200	Accepts 200 or 404, logs warning
-Login returns token for any credentials	Documents API security gap, asserts response structure
-Inventory counts fluctuate between calls	Both endpoints queried in same test run
+Issue	How Handled,
+Pet not immediately available after POST	Retry GET up to 3 times with 1.5s wait,
+Deleted pet may still return 200	Accepts 200 or 404, logs warning,
+Login returns token for any credentials	Documents API security gap, asserts response structure,
+Inventory counts fluctuate between calls	Both endpoints queried in same test run.
 ________________________________________
 🔧 Key Design Decisions : 
 •	Client Pattern — API logic in *Client.java, completely separate from step logic
